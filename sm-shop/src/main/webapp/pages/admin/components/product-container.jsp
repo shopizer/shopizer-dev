@@ -30,9 +30,10 @@
 										if (status != 0 && status !=9999) {
 											var msg = isc.XMLTools.selectObjects(jsonData, "/response/statusMessage");
 												alert("! " + msg);
+												window.location='<c:url value="${reloadUrl}" />';
 										}
 										if(status == 9999) {
-											window.location='<c:url value="${afterRemoveUrl}" />';
+											window.location='<c:url value="${reloadUrl}" />';
 										}
 									}
 								});  
@@ -120,7 +121,7 @@
 											if (confirm('<s:message code="label.entity.remove.confirm" text="Do you really want to remove this record ?" />')) {
 												return this.Super("removeData", arguments);
 											}
-								   		}
+								   		},
 								   		//recordDrop: function (dropRecords, targetRecord, index, sourceWidget) {
 											//alert(dropRecords.length);
 											//alert(dropRecords.length);
