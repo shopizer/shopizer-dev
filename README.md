@@ -1,4 +1,4 @@
-#shopizer-dev
+#UnOfficial Branch of Shopizer Development
 
 ## First Note
 Official releases of Shopizer shopping cart are only available from [Shopizer](http://www.shopizer.com/ "Shopizer official website") website for production use.
